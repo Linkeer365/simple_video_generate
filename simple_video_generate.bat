@@ -1,0 +1,1 @@
+cmd /k "cd /d D:\simple_video_generate\ && python .\pdf2img.py && python .\audio2video_and_merge.py && python .\clean_and_move.py"
