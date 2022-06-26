@@ -28,4 +28,22 @@ comm=f"pdftoppm \"{pdf_path}\" -jpeg \"{out_path}\""
 # print(comm)
 os.system(comm)
 
+padding_ori_dict={"0"+str(each):str(each) for each in range(1,10)}
+
+os.chdir(outdir)
+
+# 有时候用 1,2,3,4 有时候又用 01,02,03,04 搞不懂这群老外咋想的...
+## 全给你format了
+
+for each in os.listdir(outdir):
+    if each.endswith(".jpg"):
+        head=each.split("-")[0]
+        mid=each.split("-")[1].replace(".jpg", "")
+        if mid in padding_ori_dict.keys():
+            new_mid=padding_ori_dict[mid]
+            new_name=head+"-"+new_mid+".jpg"
+            os.rename(each,new_name)
+
+print("done.")
+
 

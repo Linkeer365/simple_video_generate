@@ -4,6 +4,7 @@ import subprocess
 
 import os
 from time import sleep
+import shutil
 
 # for i in os.environ.get("PATH").split(";"):
 #     print(i)
@@ -29,7 +30,12 @@ def a2v(audio_file:str,img_file:str,video_file:str) -> None:
     else:
         not_divisible_by_two="-vf \"scale=2*trunc(iw/2):2*trunc(ih/2),setsar=1\""
         
-        command_str=f"ffmpeg -r 0.1 -loop 1 -i \"{img_file}\" -i \"{audio_file}\" {not_divisible_by_two} -c:v libx264 -tune stillimage -c:a aac -b:a 192k -shortest \"{video_file}\" -y"
+        command_str=f"ffmpeg -loop 1 -i \"{img_file}\" -i \"{audio_file}\" {not_divisible_by_two} -c:v libx264 -tune stillimage -c:a aac -b:a 192k -shortest \"{video_file}\" -y"
+        
+        # 至今不清楚这条该怎么写hh
+        ## 破案了，不能用 -r 0.1
+
+        # command_str=f"ffmpeg -hide_banner -loop 1 -i \"{img_file}\" -i \"{audio_file}\" {not_divisible_by_two} -c:v libx264 -preset ultrafast -tune stillimage -c:a copy -pix_fmt yuv420p -shortest \"{video_file}\" -y"
         
         print(command_str)
         # os.system ('chcp 65001')
@@ -46,8 +52,13 @@ def path_format(path,suffix,cwd):
 
 if __name__=="__main__":
     files=os.listdir(".")
-    for each in files:
-        if each.endswith(".mp3") and not each.startswith("loud_"):
+    mp3_files=[each for each in files if each.endswith(".mp3")]
+    mp3_files=sorted(mp3_files,key=lambda x:int(x.replace(finish_name+"-","").replace(".mp3","")))
+    
+    # print(mp3_files)
+    # os._exit(0)
+    for each in mp3_files:
+        if each.endswith(".mp3"):
             print(each)
             filename=each.replace(".mp3","")
             print(filename)
@@ -72,5 +83,6 @@ if __name__=="__main__":
     finish_path=finish_dir+os.sep+finish_name+".mp4"
     concat_comm=f"ffmpeg -f concat -safe 0 -i mylist.txt -c copy \"{finish_path}\" -y"
     os.system(concat_comm)
+    shutil.copyfile(finish_path, "video-collection/{}.mp4".format(finish_name))
 
     
