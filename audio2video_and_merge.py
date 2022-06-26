@@ -53,33 +53,48 @@ def path_format(path,suffix,cwd):
 if __name__=="__main__":
     files=os.listdir(".")
     mp3_files=[each for each in files if each.endswith(".mp3")]
-    mp3_files=sorted(mp3_files,key=lambda x:int(x.replace(finish_name+"-","").replace(".mp3","")))
+    mp3_files=sorted(mp3_files,key=lambda x:int(x.split("-")[-1].replace(".mp3","")))
+    pic_files=[each for each in files if each.endswith(".jpg")]
+    pic_files=sorted(pic_files,key=lambda x:int(x.split("-")[-1].replace(".jpg","")))
     
+    mp3_pic_zip=zip(mp3_files,pic_files)
+
+    for mp3,pic in mp3_pic_zip:
+        audio_file=cwd+os.sep+mp3
+        img_file=cwd+os.sep+pic
+        video_file=cwd+os.sep+mp3.replace(".mp3", "")+".mp4"
+        a2v(audio_file, img_file, video_file)
+        with open("mylist.txt","a",encoding="gbk") as f:
+            f.write(f"file \'{video_file}\'\n")
+        print("one done.")
+
+    # poppler 会出现乱码很烦，换了一种写法
+
     # print(mp3_files)
     # os._exit(0)
-    for each in mp3_files:
-        if each.endswith(".mp3"):
-            print(each)
-            filename=each.replace(".mp3","")
-            print(filename)
-            img_file=filename+".jpg"
-            print(img_file)
-            # assert img_file in files
-            audio_file=path_format(filename,".mp3",cwd)
-            # if not "loud" in audio_file:
-                # audio_file2=path_format("loud_"+filename, ".mp3", cwd)
-            # else:
-                # audio_file2=audio_file
-            # volume_raise_comm=f"ffmpeg -i \"{audio_file}\" -af \"volume=50\" \"{audio_file2}\" -y"
-            # print(volume_raise_comm)
-            # os.system(volume_raise_comm)
-            # sleep(3)
-            img_file=path_format(filename,".jpg",cwd)
-            video_file=path_format(filename,".mp4",cwd)
-            a2v(audio_file,img_file,video_file)
-            with open("mylist.txt","a",encoding="gbk") as f:
-                f.write(f"file \'{video_file}\'\n")
-            print("one done.")
+    # for each in mp3_files:
+    #     if each.endswith(".mp3"):
+    #         print(each)
+    #         filename=each.replace(".mp3","")
+    #         print(filename)
+    #         img_file=filename+".jpg"
+    #         print(img_file)
+    #         # assert img_file in files
+    #         audio_file=path_format(filename,".mp3",cwd)
+    #         # if not "loud" in audio_file:
+    #             # audio_file2=path_format("loud_"+filename, ".mp3", cwd)
+    #         # else:
+    #             # audio_file2=audio_file
+    #         # volume_raise_comm=f"ffmpeg -i \"{audio_file}\" -af \"volume=50\" \"{audio_file2}\" -y"
+    #         # print(volume_raise_comm)
+    #         # os.system(volume_raise_comm)
+    #         # sleep(3)
+    #         img_file=path_format(filename,".jpg",cwd)
+    #         video_file=path_format(filename,".mp4",cwd)
+    #         a2v(audio_file,img_file,video_file)
+    #         with open("mylist.txt","a",encoding="gbk") as f:
+    #             f.write(f"file \'{video_file}\'\n")
+    #         print("one done.")
     finish_path=finish_dir+os.sep+finish_name+".mp4"
     concat_comm=f"ffmpeg -f concat -safe 0 -i mylist.txt -c copy \"{finish_path}\" -y"
     os.system(concat_comm)

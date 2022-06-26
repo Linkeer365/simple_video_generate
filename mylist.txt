@@ -1,4 +1,3 @@
-file 'D:\simple_video_generate\qpnwbz-qmwnzqz-2007-1.mp4'
-file 'D:\simple_video_generate\qpnwbz-qmwnzqz-2007-2.mp4'
-file 'D:\simple_video_generate\qpnwbz-qmwnzqz-2007-3.mp4'
-file 'D:\simple_video_generate\qpnwbz-qmwnzqz-2007-4.mp4'
+file 'D:\simple_video_generate\高中时代-dhew-2000-1.mp4'
+file 'D:\simple_video_generate\高中时代-dhew-2000-2.mp4'
+file 'D:\simple_video_generate\高中时代-dhew-2000-3.mp4'

@@ -25,7 +25,7 @@ pdf_path=pdf_path_obj.as_posix()
 out_path = outdir + os.sep + pdf_path_obj.stem
 
 comm=f"pdftoppm \"{pdf_path}\" -jpeg \"{out_path}\""
-# print(comm)
+print(comm)
 os.system(comm)
 
 padding_ori_dict={"0"+str(each):str(each) for each in range(1,10)}
