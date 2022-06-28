@@ -15,14 +15,25 @@ import os
 # https://stackoverflow.com/questions/168409/how-do-you-get-a-directory-listing-sorted-by-creation-date-in-python
 from pathlib import Path
 
+from xpinyin import Pinyin
+
+p=Pinyin()
+
 downdir=os.getcwd()
 outdir=os.getcwd()
 
 # 最新的pdf文件
 pdf_path_obj = sorted(Path(downdir).glob("*.pdf"), key=os.path.getctime,reverse=True)[0]
 pdf_path=pdf_path_obj.as_posix()
+filename=pdf_path.split(os.sep)[-1].replace(".pdf", "")
+new_filename=p.get_pinyin(filename,"-")
+print(new_filename)
+
+os.rename(filename+".pdf",new_filename+".pdf")
+
+pdf_path=pdf_path.replace(filename, new_filename)
 # print(type(pdf_path))
-out_path = outdir + os.sep + pdf_path_obj.stem
+out_path = new_filename 
 
 comm=f"pdftoppm \"{pdf_path}\" -jpeg \"{out_path}\""
 print(comm)
@@ -37,12 +48,16 @@ os.chdir(outdir)
 
 for each in os.listdir(outdir):
     if each.endswith(".jpg"):
-        head=each.split("-")[0]
-        mid=each.split("-")[1].replace(".jpg", "")
+        last_hyphen_idx=each.rfind("-")
+        head=each[0:last_hyphen_idx]
+        tail=each[last_hyphen_idx+1:]
+        mid=tail.replace(".jpg", "")
         if mid in padding_ori_dict.keys():
             new_mid=padding_ori_dict[mid]
             new_name=head+"-"+new_mid+".jpg"
             os.rename(each,new_name)
+
+os.rename(new_filename+".pdf", filename+".pdf")
 
 print("done.")
 

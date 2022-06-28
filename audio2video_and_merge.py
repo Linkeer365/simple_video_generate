@@ -56,17 +56,31 @@ if __name__=="__main__":
     mp3_files=sorted(mp3_files,key=lambda x:int(x.split("-")[-1].replace(".mp3","")))
     pic_files=[each for each in files if each.endswith(".jpg")]
     pic_files=sorted(pic_files,key=lambda x:int(x.split("-")[-1].replace(".jpg","")))
-    
-    mp3_pic_zip=zip(mp3_files,pic_files)
 
-    for mp3,pic in mp3_pic_zip:
-        audio_file=cwd+os.sep+mp3
-        img_file=cwd+os.sep+pic
-        video_file=cwd+os.sep+mp3.replace(".mp3", "")+".mp4"
-        a2v(audio_file, img_file, video_file)
-        with open("mylist.txt","a",encoding="gbk") as f:
-            f.write(f"file \'{video_file}\'\n")
-        print("one done.")
+    for mp3 in mp3_files:
+        mp3_num=mp3.split("-")[-1].replace(".mp3","")
+        for pic in pic_files:
+            pic_num=pic.split("-")[-1].replace(".jpg","")
+            if mp3_num == pic_num:
+                audio_file=cwd+os.sep+mp3
+                img_file=cwd+os.sep+pic
+                video_file=cwd+os.sep+mp3.replace(".mp3", "")+".mp4"
+                a2v(audio_file, img_file, video_file)
+                with open("mylist.txt","a",encoding="gbk") as f:
+                    f.write(f"file \'{video_file}\'\n")
+                print("one done.")
+    
+
+    # mp3_pic_zip=zip(mp3_files,pic_files)
+
+    # for mp3,pic in mp3_pic_zip:
+    #     audio_file=cwd+os.sep+mp3
+    #     img_file=cwd+os.sep+pic
+    #     video_file=cwd+os.sep+mp3.replace(".mp3", "")+".mp4"
+    #     a2v(audio_file, img_file, video_file)
+    #     with open("mylist.txt","a",encoding="gbk") as f:
+    #         f.write(f"file \'{video_file}\'\n")
+    #     print("one done.")
 
     # poppler 会出现乱码很烦，换了一种写法
 
