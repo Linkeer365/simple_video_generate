@@ -2,64 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1541162d-b0bf-4c91-ad57-9800094a505d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/utts.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/utts.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/audio2video_and_merge.py" beforeDir="false" afterPath="$PROJECT_DIR$/audio2video_and_merge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clean_and_move.py" beforeDir="false" afterPath="$PROJECT_DIR$/clean_and_move.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mylist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/mylist.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oqjnwz-wknznw-1936-01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oqjnwz-wknznw-1936-02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oqjnwz-wknznw-1936-03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oqjnwz-wknznw-1936-04.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oqjnwz-wknznw-1936-05.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oqjnwz-wknznw-1936-06.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oqjnwz-wknznw-1936-07.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oqjnwz-wknznw-1936-08.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oqjnwz-wknznw-1936-09.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oqjnwz-wknznw-1936-1.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oqjnwz-wknznw-1936-1.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oqjnwz-wknznw-1936-10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oqjnwz-wknznw-1936-10.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oqjnwz-wknznw-1936-2.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oqjnwz-wknznw-1936-2.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oqjnwz-wknznw-1936-3.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oqjnwz-wknznw-1936-3.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oqjnwz-wknznw-1936-4.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oqjnwz-wknznw-1936-5.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oqjnwz-wknznw-1936-6.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oqjnwz-wknznw-1936-7.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oqjnwz-wknznw-1936-8.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oqjnwz-wknznw-1936-9.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oqjnwz-wknznw-1936.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pdf2img.py" beforeDir="false" afterPath="$PROJECT_DIR$/pdf2img.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ppllj-jwnzh-1936-1.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ppllj-jwnzh-1936-1.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf-collection/ ran hui de nuo dun -TS ai lve te -1936.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf-collection/=ran=hui=de=nuo=dun=-TS=ai=lve=te=-1936.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf-collection/gs.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf-collection/hjhj.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf-collection/jxks.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf-collection/nd-dn-1936.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf-collection/oqjnwz-wknznw-1936.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf-collection/pp-ll-2019.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf-collection/stza.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf-collection/sy.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf-collection/小孩-帝王斑蝶-2020.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf-collection/想象大鸟-周伦佑-.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf-collection/我写的未经采用的关于齐泽克的报道-鸿帆-2007.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf-collection/我的青春.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf-collection/燃毁的诺顿-TS艾略特-1936.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf-collection/知乎q39952242a1980365254-匿名用户-2021.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf-collection/第一次玩海龟汤就上头-吐维-2010.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf-collection/第一次玩海龟汤就上手-吐维-2010.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf-collection/高中时代-dhew-2000.pdf" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python37/site-packages/wand/image.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="1095" column="30" selection-start-line="1095" selection-start-column="30" selection-end-line="1095" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pdf2img.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="31" column="46" lean-forward="true" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -80,12 +52,16 @@
       </list>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1376" />
     <option name="height" value="754" />
   </component>
+  <component name="ProjectId" id="2IDIYC1tPoBt40m9yjeEZsdYRkV" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -105,33 +81,23 @@
       </pane>
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/simple_video_generate",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  }
+}]]></component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
       <console-settings module-name="utts" is-module-sdk="true">
         <option name="myUseModuleSdk" value="true" />
         <option name="myModuleName" value="utts" />
       </console-settings>
-    </option>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
     </option>
   </component>
   <component name="RunManager" selected="Python.pdf2img">
@@ -209,6 +175,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -222,6 +189,7 @@
       <workItem from="1656083365274" duration="4847000" />
       <workItem from="1656089002923" duration="4624000" />
       <workItem from="1656385845108" duration="1442000" />
+      <workItem from="1669709780551" duration="629000" />
     </task>
     <servers />
   </component>
@@ -256,12 +224,23 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/utts$kansz.coverage" NAME="kansz Coverage Results" MODIFIED="1656087028915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/utts$kanszs.coverage" NAME="kanszs Coverage Results" MODIFIED="1656093332513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/simple_video_generate$pdf2img.coverage" NAME="pdf2img Coverage Results" MODIFIED="1656386085391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/utts$kansz.coverage" NAME="kansz Coverage Results" MODIFIED="1656087028915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/kansz.py" />

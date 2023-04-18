@@ -11,6 +11,7 @@
 # 直接用 pdftoppm 命令就可以了，不用什么 pdf2image
 
 import os
+import time
 
 # https://stackoverflow.com/questions/168409/how-do-you-get-a-directory-listing-sorted-by-creation-date-in-python
 from pathlib import Path
@@ -19,6 +20,14 @@ from xpinyin import Pinyin
 
 p=Pinyin()
 
+with open("D:\simple_video_generate\svg_paths.txt","r",encoding="utf-8") as f:
+    current_svg=f.readlines()[-1].strip("\n")
+    print("文件夹名称是：{}".format(current_svg))
+
+# current_svg=p.get_pinyin(chars)
+# os.rename(src, dst)
+
+os.chdir(current_svg)
 downdir=os.getcwd()
 outdir=os.getcwd()
 
@@ -26,6 +35,7 @@ outdir=os.getcwd()
 pdf_path_obj = sorted(Path(downdir).glob("*.pdf"), key=os.path.getctime,reverse=True)[0]
 pdf_path=pdf_path_obj.as_posix()
 filename=pdf_path.split(os.sep)[-1].replace(".pdf", "")
+print(filename)
 new_filename=p.get_pinyin(filename,"-")
 print(new_filename)
 
