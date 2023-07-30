@@ -1,3 +1,0 @@
-file 'D:\simple_video_generate\20230617112913\假如死亡来临-林夕-2007-1.mp4'
-file 'D:\simple_video_generate\20230617112913\假如死亡来临-林夕-2007-2.mp4'
-file 'D:\simple_video_generate\20230617112913\假如死亡来临-林夕-2007-3.mp4'

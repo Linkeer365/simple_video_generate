@@ -1,5 +1,0 @@
-file 'D:\simple_video_generate\20230730093833\知乎回答-你听过最令人猝不及防的一句话是什么-毛豆娘-2023-1.mp4'
-file 'D:\simple_video_generate\20230730093833\知乎回答-你听过最令人猝不及防的一句话是什么-毛豆娘-2023-2.mp4'
-file 'D:\simple_video_generate\20230730093833\知乎回答-你听过最令人猝不及防的一句话是什么-毛豆娘-2023-3.mp4'
-file 'D:\simple_video_generate\20230730093833\知乎回答-你听过最令人猝不及防的一句话是什么-毛豆娘-2023-4.mp4'
-file 'D:\simple_video_generate\20230730093833\知乎回答-你听过最令人猝不及防的一句话是什么-毛豆娘-2023-5.mp4'
